@@ -1,2 +1,2 @@
 # my-first-website
-Website portofolio pertama
+Website portofolio
