@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Ismail Dicky S, showcasing web development projects and technical expertise">
+  <title>Maildickys | Portfolio</title>
+  <link rel="canonical" href="https://maildickys.me">
+  <link rel="icon" href="assets/icons/MDSgroup-logo-light-mode.png" type="image/svg+xml">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Maildickys">
+  <meta property="og:description" content="Professional web developer portfolio">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- Script File -->
+  <script src="./scripts/modules/lazy-load.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/modules/navigation.css">
+  <link rel="stylesheet" href="./styles/modules/hero.css">
+  <link rel="stylesheet" href="./styles/modules/skills.css">
+  <link rel="stylesheet" href="./styles/modules/projects.css">
+  <link rel="stylesheet" href="./styles/modules/blog.css">
+  <link rel="stylesheet" href="./styles/modules/contact.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="sticky-nav">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo"><img src="./assets/icons/MDSgroup-logo-light-mode.png"></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title">Front-End Developer & UI Designer</h1>
+        <p class="hero-subtitle">Solve your problems with modern technologies</p>
+        <div class="hero-highlights">
+          <span class="highlight">SEO Optimization</span>
+          <span class="highlight">Problems Solving</span>
+          <span class="highlight">UX Focused</span>
+        </div>
+        <a href="#projects" class="cta-button">Explore My Work →</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/HighDefinition1.png" alt="Professional Headshot" class="lazy-load" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="skills-section">
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="skills-grid">
+
+      <!-- Repeat for 9 skills -->
+      <div class="skill-card" data-skill="HTML">
+        <i class="fab fa-html5 skill-icon"></i>
+        <h3 class="skill-name">HTML5</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 95%"></div>
+        </div>
+        <span class="skill-level">Advanced</span>
+      </div>
+
+      <div class="skill-card" data-skill="CSS">
+        <i class="fab fa-css3-alt skill-icon"></i>
+        <h3 class="skill-name">CSS</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 80%"></div>
+        </div>
+        <span class="skill-level">Advanced</span>
+      </div>
+
+      <div class="skill-card" data-skill="JavaScript">
+        <i class="fab fa-js skill-icon"></i>
+        <h3 class="skill-name">JavaScript</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 25%"></div>
+        </div>
+        <span class="skill-level">Beginner</span>
+      </div>
+
+      <div class="skill-card" data-skill="figma">
+        <i class="fab fa-figma skill-icon"></i>
+        <h3 class="skill-name">Figma</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 25%"></div>
+        </div>
+        <span class="skill-level">Beginner</span>
+      </div>
+      
+      <div class="skill-card" data-skill="linux">
+        <i class="fab fa-linux skill-icon"></i>
+        <h3 class="skill-name">Linux</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 80%"></div>
+        </div>
+        <span class="skill-level">Advanced</span>
+      </div>
+      
+      <div class="skill-card" data-skill="english">
+        <i class="fab fa-language skill-icon"></i>
+        <h3 class="skill-name">English</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <span class="skill-level">B1</span>
+      </div>
+      
+      <div class="skill-card" data-skill="ai-tools">
+        <i class="fab fa-robot skill-icon"></i>
+        <h3 class="skill-name">Ai Tools</h3>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <span class="skill-level">Intermediate</span>
+      </div>
+
+  </section>
+
+  <!-- Project Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Project 1 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/images/Tura_ UI Design.jpeg" alt="Music Player" class="lazy-load" loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Music Player</h3>
+                <p class="project-description">
+                  A music player web app.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span></span>
+                  <span class="tech-tag">JavaScipt</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/images/Web Landing Ui Design Concept1.jpeg" alt="Landing Page" class="lazy-load"
+                  loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Landing Page</h3>
+                <p class="project-description">
+                  A responsive landing page showcasing product and services.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/images/Joker-web.jpeg" alt="Landing Page" class="lazy-load"
+                  loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Landing Page</h3>
+                <p class="project-description">
+                  A responsive landing page showcasing product and services.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more projects as needed -->
+
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="section-container">
+      <h2 class="section-title">Latest Articles</h2>
+      <div class="blog-grid">
+
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="assets/images/web-development-trends-2025.jpeg" alt="Web Development Trends" class="lazy-load" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Top Web Development Trends in 2024</h3>
+            <p class="blog-excerpt">
+              Explore the latest trends in web development, including AI integration,
+              progressive web apps, and modern JavaScript frameworks.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-date">January 15, 2024</span>
+              <span class="blog-category">Web Development</span>
+            </div>
+            <a href="articles/web-development-trends-2025.html" target="_blank" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="assets/images/the-1975-poster.jpeg" alt="CSS Grid Layouts" class="lazy-load" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Mastering CSS Grid Layouts</h3>
+            <p class="blog-excerpt">
+              Learn how to create responsive, complex layouts using CSS Grid with
+              practical examples and best practices.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-date">December 20, 2023</span>
+              <span class="blog-category">CSS</span>
+            </div>
+            <a href="/articles/mastering-css-grid.html" target="_blank" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="assets/images/mastering-css-grid1.jpeg" alt="JavaScipt Function" class="lazy-load" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Mastering JavaScript Function</h3>
+            <p class="blog-excerpt">
+              Learn how to create function in JavaScipt with
+              practical examples and best practices.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-date">December 20, 2023</span>
+              <span class="blog-category">JavaScript</span>
+            </div>
+            <a href="/articles/mastering-javascript-function.html" target="_blank" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Add more blog posts as needed -->
+      </div>
+    </div>
+
+    <!-- Load More Button (comming soon) -->
+<!-- <div class="blog-controls">
+  <button id="load-more" class="cta-button">Load More Articles</button>
+</div> -->
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <h2 class="section-title">Let Me Know Your Problems</h2>
+      <form id="contact-form" class="contact-form" aria-label="Contact Form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error-message" id="name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error-message" id="message-error"></span>
+        </div>
+
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Maildickys. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/maildickys" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ismail-dicky-s-348867184/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+  </footer>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/modules/contact.js" defer></script>
+  <!-- <script src="./scripts/modules/blog.js"></script> --> <!-- Load More Button (comming soon) -->
+</body>
+</html>
