@@ -13,47 +13,36 @@ function pickComputerMove() {
     return computerMove;
 }
 
-function rock() {
+function playGame(playerMove) {
     const computerMove = pickComputerMove();
     let result = '';
+    if (playerMove === 'Scissors') {
+        if (computerMove === 'Rock') {
+            result = 'You lose.';
+        } else if (computerMove === 'Paper') {
+            result = 'You WIN!.';
+        } else if (computerMove === 'Scissors') {
+            result = 'Tie.'
+        }
 
-    if (computerMove === 'Rock') {
-        result = 'Tie.';
-    } else if (computerMove === 'Paper') {
-        result = 'You lose.';
-    } else if (computerMove === 'Scissors') {
-        result = 'You WIN!.'
+    } else if (playerMove === 'Paper') {
+        if (computerMove === 'Rock') {
+            result = 'You WIN!.';
+        } else if (computerMove === 'Paper') {
+            result = 'Tie';
+        } else if (computerMove === 'Scissors') {
+            result = 'You lose.'
+        }
+
+    } else if (playerMove === 'Rock') {
+        if (computerMove === 'Rock') {
+            result = 'Tie.';
+        } else if (computerMove === 'Paper') {
+            result = 'You lose.';
+        } else if (computerMove === 'Scissors') {
+            result = 'You WIN!.'
+        }
     }
     
-    alert(`Your move is Rock and Computer is ${computerMove}. ${result}`);
-}
-
-function paper() {
-    const computerMove = pickComputerMove();
-    let result = '';
-
-    if (computerMove === 'Rock') {
-        result = 'You WIN!.';
-    } else if (computerMove === 'Paper') {
-        result = 'Tie';
-    } else if (computerMove === 'Scissors') {
-        result = 'You lose.'
-    }
-    
-    alert(`Your move is Paper and Computer is ${computerMove}. ${result}`);
-}
-
-function scissors() {
-    const computerMove = pickComputerMove();
-    let result = '';
-
-    if (computerMove === 'Rock') {
-        result = 'You lose.';
-    } else if (computerMove === 'Paper') {
-        result = 'You WIN!.';
-    } else if (computerMove === 'Scissors') {
-        result = 'Tie.'
-    }
-    
-    alert(`Your move is Scissors and Computer is ${computerMove}. ${result}`);
+    alert(`Your move is ${playerMove} and Computer is ${computerMove}. ${result}`);
 }
